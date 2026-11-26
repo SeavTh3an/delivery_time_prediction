@@ -1,0 +1,15 @@
+# Paths (relative to Backend/)
+data_path: data/raw/Food_Delivery_Times.csv
+model_path: models/delivery_model.joblib
+metrics_path: models/metrics.json
+figures_dir: figures
+
+# Labels: Fast < fast_below, Late > late_above, otherwise On time
+fast_below: 40
+late_above: 60
+
+# Training
+random_state: 42
+test_size: 0.2
+cv_folds: 5
+C_grid: [0.01, 0.1, 1, 10, 100]
